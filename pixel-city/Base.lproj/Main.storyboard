@@ -40,7 +40,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUy-MP-WxL">
-                                <rect key="frame" x="334" y="782" width="60" height="60"/>
+                                <rect key="frame" x="334" y="802" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="fQS-Vg-mZt"/>
                                     <constraint firstAttribute="width" constant="60" id="gLo-fu-tPx"/>
@@ -51,18 +51,21 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fqt-Ki-KWK">
-                                <rect key="frame" x="0.0" y="896" width="414" height="0.0"/>
+                                <rect key="frame" x="0.0" y="895" width="414" height="1"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="0oW-8M-1Ek"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="LPd-mW-Twa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0nq-EX-LGH"/>
                             <constraint firstItem="Yot-hU-Om8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C4A-b2-BAt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fUy-MP-WxL" secondAttribute="bottom" constant="20" id="Egb-Ta-tTl"/>
+                            <constraint firstItem="fUy-MP-WxL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="H11-13-0v1"/>
                             <constraint firstItem="Yot-hU-Om8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ISG-EP-UT9"/>
-                            <constraint firstItem="fqt-Ki-KWK" firstAttribute="top" secondItem="LPd-mW-Twa" secondAttribute="bottom" id="VXR-dD-A8i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fUy-MP-WxL" secondAttribute="bottom" constant="20" id="eC0-O1-KTD"/>
+                            <constraint firstItem="Yot-hU-Om8" firstAttribute="top" secondItem="LPd-mW-Twa" secondAttribute="bottom" constant="-896" id="VXR-dD-A8i"/>
+                            <constraint firstAttribute="bottom" secondItem="fqt-Ki-KWK" secondAttribute="bottom" id="Z27-fm-RVH"/>
                             <constraint firstItem="LPd-mW-Twa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fmn-Ku-1eO"/>
                             <constraint firstItem="Yot-hU-Om8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lub-Fu-moy"/>
                             <constraint firstItem="LPd-mW-Twa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mcq-vZ-qQg"/>
@@ -73,6 +76,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="LPd-mW-Twa" id="brH-4Q-qzl"/>
+                        <outlet property="pullUpView" destination="fqt-Ki-KWK" id="MPF-ye-iMD"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="0oW-8M-1Ek" id="y5D-b4-lJf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
